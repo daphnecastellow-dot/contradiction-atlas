@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Map conflicting claims without forcing premature resolution."""
+"""Map conflicting claims without forcing premature resolution.\n\nContradiction is preserved as evidence state, not treated as an error.\n"""
 
 from __future__ import annotations
 import argparse, datetime as dt, json, re, sys
