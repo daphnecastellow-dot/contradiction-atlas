@@ -1,0 +1,6 @@
+flowchart LR
+  C001["C001 · The bell rang three times shortly before midnight."]
+  C002["C002 · The bell rang twice after midnight."]
+  C003["C003 · The bell was not heard from the keeper station."]
+  C001 <-->|"X001 · count · open"| C002
+  C001 <-->|"X002 · interpretation · insufficient-evidence"| C003
