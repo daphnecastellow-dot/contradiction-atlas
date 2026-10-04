@@ -1,0 +1,19 @@
+{
+  "format": "contradiction-atlas/0.1",
+  "title": "North Reach signal dispute: contradiction demo",
+  "created_at": "2026-10-04T19:34:10Z",
+  "sources": [
+    {"id":"S001","label":"Harbor master log","kind":"primary","date":"1904-11-03","url":"","note":"Fictional demonstration source."},
+    {"id":"S002","label":"North Reach Gazette","kind":"contemporary-report","date":"1904-11-05","url":"","note":"Fictional demonstration source."},
+    {"id":"S003","label":"Keeper interview transcript","kind":"primary","date":"1904-11-09","url":"","note":"Fictional demonstration source."}
+  ],
+  "claims": [
+    {"id":"C001","text":"The bell rang three times shortly before midnight.","scope":"Signal count and time","sources":["S001"],"note":""},
+    {"id":"C002","text":"The bell rang twice after midnight.","scope":"Signal count and time","sources":["S002"],"note":""},
+    {"id":"C003","text":"The bell was not heard from the keeper station.","scope":"Whether the signal was audible at the station","sources":["S003"],"note":""}
+  ],
+  "conflicts": [
+    {"id":"X001","left":"C001","right":"C002","dimension":"count","status":"open","note":"The early sources disagree on the number of rings.","resolution":"","history":[{"at":"2026-10-04T19:34:10Z","action":"created","status":"open","reason":"The early sources disagree on the number of rings."}]},
+    {"id":"X002","left":"C001","right":"C003","dimension":"interpretation","status":"insufficient-evidence","note":"One record reports a signal; another witness reports not hearing it. These statements are in tension but are not exact logical negations.","resolution":"","history":[{"at":"2026-10-04T19:34:10Z","action":"created","status":"open","reason":"One record reports a signal; another witness reports not hearing it. These statements are in tension but are not exact logical negations."},{"at":"2026-10-04T19:34:10Z","action":"status","status":"insufficient-evidence","previous_status":"open","reason":"The sources do not establish whether the keeper station could hear the bell under the conditions described.","resolution":""}]}
+  ]
+}
